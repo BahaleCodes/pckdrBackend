@@ -5,7 +5,7 @@ class CommonInfo(models.Model):
     FName = models.CharField(max_length=50)
     LName = models.CharField(max_length=50)
     Email = models.EmailField()
-    IdNum = models.IntegerField()
+    IdNum = models.CharField(max_length=13)
     class Mata:
         abstract = True
 
